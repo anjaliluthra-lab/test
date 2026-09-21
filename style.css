@@ -30,10 +30,14 @@ body {
   text-decoration: none;
   margin-left: 25px;
   font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
 }
 
 .nav-links a:hover {
   color: #7f9cf5;
+  border-bottom: 2px solid #7f9cf5;
 }
 
 /* Hero */
@@ -137,6 +141,15 @@ body {
 /* Contact */
 #contact p {
   font-weight: 500;
+}
+
+#contact a {
+  color: #4f6df5;
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  color: #3d57d4;
 }
 
 /* Footer */
