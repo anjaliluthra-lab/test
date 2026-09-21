@@ -1,9 +1,11 @@
+/* Resets default spacing on every element */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Sets the base font, line spacing, and text color for the whole page */
 body {
   font-family: 'Poppins', Arial, sans-serif;
   line-height: 1.6;
@@ -11,6 +13,7 @@ body {
 }
 
 /* Navbar */
+/* Lays out logo and links side by side */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -19,12 +22,14 @@ body {
   background-color: #1e293b;
 }
 
+/* Styles the logo text */
 .navbar .logo {
   color: white;
   font-weight: 700;
   font-size: 1.2rem;
 }
 
+/* Styles each nav link, removes underline */
 .nav-links a {
   color: #d1d5e0;
   text-decoration: none;
@@ -35,12 +40,14 @@ body {
   transition: color 0.2s, border-color 0.2s;
 }
 
+/* Changes link color on mouse hover */
 .nav-links a:hover {
   color: #7f9cf5;
   border-bottom: 2px solid #7f9cf5;
 }
 
 /* Hero */
+/* The big intro banner styling */
 .hero {
   background-color: #1e293b;
   color: white;
@@ -48,17 +55,20 @@ body {
   padding: 80px 20px;
 }
 
+/* Main heading size */
 .hero h1 {
   font-size: 2.4rem;
   margin-bottom: 10px;
 }
 
+/* Subtitle text under the heading */
 .hero p {
   font-size: 1.1rem;
   color: #cbd5e1;
   margin-bottom: 25px;
 }
 
+/* Button styling for "View My Work" */
 .btn {
   display: inline-block;
   background-color: #4f6df5;
@@ -69,28 +79,33 @@ body {
   font-weight: 600;
 }
 
+/* Darker button color on hover */
 .btn:hover {
   background-color: #3d57d4;
 }
 
 /* Sections */
+/* Shared spacing/width for every section */
 .section {
   padding: 60px 20px;
   max-width: 900px;
   margin: 0 auto;
 }
 
+/* Light gray background for alternating sections */
 .alt-bg {
   background-color: #f4f6fa;
   max-width: 100%;
 }
 
+/* Keeps content inside alt-bg centered and same width */
 .alt-bg > * {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Section titles with a colored left border accent */
 .section h2 {
   font-size: 1.7rem;
   margin-bottom: 20px;
@@ -105,6 +120,8 @@ body {
   gap: 15px;
 }
 
+/* Arranges skill cards in a responsive grid */
+/* Styles each individual skill box */
 .skill-card {
   background-color: white;
   border-radius: 8px;
@@ -121,6 +138,8 @@ body {
   gap: 20px;
 }
 
+/* Arranges project cards in a responsive grid */
+/* Styles each individual project card */
 .project-card {
   background-color: white;
   border-radius: 10px;
@@ -128,11 +147,13 @@ body {
   box-shadow: 0 1px 6px rgba(0,0,0,0.08);
 }
 
+/* Project title styling */
 .project-card h3 {
   margin-bottom: 8px;
   color: #1e293b;
 }
 
+/* Project description text */
 .project-card p {
   color: #555;
   font-size: 0.95rem;
@@ -143,16 +164,19 @@ body {
   font-weight: 500;
 }
 
+/* Styles contact links (email, GitHub, LinkedIn) to look like clickable URLs */
 #contact a {
   color: #4f6df5;
   text-decoration: underline;
 }
 
+/* Darker link color on mouse hover */
 #contact a:hover {
   color: #3d57d4;
 }
 
 /* Footer */
+/* Bottom footer bar styling */
 footer {
   text-align: center;
   padding: 20px;
@@ -162,6 +186,7 @@ footer {
 }
 
 /* Responsive */
+/* Adjusts layout for small screens (phones) */
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
@@ -170,4 +195,37 @@ footer {
   .hero h1 {
     font-size: 1.8rem;
   }
+}
+
+/* Sets up a smooth transform transition */
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 22px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+/* Slightly enlarges the card on hover, using a CSS3 transform */
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Button styling, now with a looping pulse animation */
+.btn {
+  display: inline-block;
+  background-color: #4f6df5;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  animation: pulse 2s infinite;
+}
+
+/* Defines the pulse: grows slightly at the midpoint, then returns */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
