@@ -2,52 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anjali's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anjali Luthra | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Anjali Luthrae</h1>
-    <p>Web Developer | Student at Ontario Tech University</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <nav class="navbar">
+    <div class="logo">Anjali Luthra</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
-  <section id="about">
+  <header class="hero">
+    <h1>Hi, I'm Anjali Luthra</h1>
+    <p>Web Developer &middot; Student at Ontario Tech University</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Write a short 2-3 sentence introduction about yourself here.</p>
+    <p>I'm a second-year IT student passionate about building clean, functional websites. I enjoy learning new frameworks and turning ideas into working web applications, one project at a time.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="section alt-bg">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Git &amp; GitHub</div>
+      <div class="skill-card">Responsive Design</div>
+    </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Project 1</h3>
-      <p>This is a description of project 1</p>
-    </div>
-    <div class="project-card">
-      <h3>Project 2</h3>
-      <p>This is a description of project 2</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Weather Dashboard</h3>
+        <p>A simple web app that fetches live weather data using a public API and displays it with a clean, responsive layout.</p>
+      </div>
+      <div class="project-card">
+        <h3>Recipe Finder</h3>
+        <p>A JavaScript-based app that lets users search recipes by ingredient and view step-by-step cooking instructions.</p>
+      </div>
+      <div class="project-card">
+        <h3>Personal Budget Tracker</h3>
+        <p>A small tool built with HTML, CSS, and JavaScript to help track daily expenses and visualize monthly spending.</p>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section alt-bg">
     <h2>Contact</h2>
     <p>Email: anjali.luthra@ontariotechu.ca</p>
+    <p>GitHub: github.com/anjaliluthra-lab</p>
+    <p>LinkedIn: linkedin.com/in/anjaliluthra</p>
   </section>
 
   <footer>
